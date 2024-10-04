@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important;
+    }
+    .nav-link:hover {
+      color: #f8b400 !important;
+    }
+    .hero {
+      height: 100vh;
+      background: url(restaurant.jpg) no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+    .menu-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">The Hungry Van</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reservation">Reserve a Table</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to Our The Hungry Van</h1>
+      <p>Enjoy the finest dining experience</p>
+      
+      <a href="#reservation" class="btn btn-warning">Reserve Now</a>
+    </div>
+  </section>
+
+  
+  <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Menu</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="istockphoto-1085159910-612x612.webp" class="card-img-top" alt="Dish">
+            <div class="card-body">
+              <h5 class="card-title">Butter Panner</h5>
+              <p class="card-text">Butter Paneer is a creamy, spiced curry with soft paneer cubes in a rich, buttery tomato sauce, perfect with naan.</p>
+              <p class="card-text"><strong>Rs.250</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="aalu paratha.jpeg" class="card-img-top" alt="Dish">
+            <div class="card-body">
+              <h5 class="card-title">Aalu paratha</h5>
+              <p class="card-text">
+                Aalu Paratha is a stuffed flatbread with a spiced potato filling, served hot with butter, yogurt, or pickle.</p>
+              <p class="card-text"><strong>Rs.150</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="Masala-Dosa-Recipe.jpg" class="card-img-top" alt="Dish">
+            <div class="card-body">
+              <h5 class="card-title">Masala Dosha</h5>
+              <p class="card-text">Masala Dosa is a crispy, fermented rice crepe filled with spiced mashed potatoes, served with chutney and sambar.</p>
+              <p class="card-text"><strong>Rs.200</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="aalu kulcha.jpg" class="card-img-top" alt="Dish">
+            <div class="card-body">
+              <h5 class="card-title">Aalu kulcha</h5>
+              <p class="card-text">Aalu Kulcha is a soft, leavened bread stuffed with spiced mashed potatoes, typically served with chutney or curry.</p>
+              <p class="card-text"><strong>Rs.170</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="kaju katli.jpeg" class="card-img-top" alt="Dish">
+            <div class="card-body">
+              <h5 class="card-title">Kaju Katli</h5>
+              <p class="card-text">Gulab Jamun are soft, deep-fried dough balls soaked in sweet cardamom-flavored syrup, a classic Indian dessert.</p>
+              <p class="card-text"><strong>Rs.100</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card menu-card">
+            <img src="gulabjamun.jpg" class="card-img-top" alt="Dish">
+            <div class="card-body">
+              <h5 class="card-title">Aalu paratha</h5>
+              <p class="card-text">Gulab Jamun are soft, deep-fried dough balls soaked in sweet cardamom-flavored syrup, a classic Indian dessert.</p>
+              <p class="card-text"><strong>Rs.70</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p class="text-center">Established in 2020, The Hungry Van is your go-to destination for delicious, freshly made meals that satisfy every craving. We take pride in serving a diverse menu, blending traditional flavors with modern twists. Whether you're looking for a quick bite or a hearty meal, our carefully crafted dishes, made from high-quality ingredients, promise to deliver an unforgettable culinary experience. From mouth-watering street food to savory comfort meals, The Hungry Van has something for everyone. Come hungry, leave happy!</p>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <p class="text-center">For inquiries, reservations, or catering, reach out to us through the following:</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Address:</strong> 123 Foodie Street, kanpur City</li>
+            <li class="list-group-item"><strong>Phone:</strong>9999-9999-9999</li>
+            <li class="list-group-item"><strong>Email:</strong>contact@restaurant.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="reservation" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Reserve a Table</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <label for="date" class="form-label">Date</label>
+              <input type="date" class="form-control" id="date">
+            </div>
+            <div class="mb-3">
+              <label for="time" class="form-label">Time</label>
+              <input type="time" class="form-control" id="time">
+            </div>
+            <div class="mb-3">
+              <label for="guests" class="form-label">Number of Guests</label>
+              <input type="number" class="form-control" id="guests" placeholder="Number of Guests">
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Reserve Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="footer text-center py-4">
+    <div class="container">
+      <p>&copy; 2024 The Hungry Van. All rights reserved.</p>
+      <div>
+        <a href="#" class="text-white me-2">Facebook</a>
+        <a href="#" class="text-white me-2">Instagram</a>
+        <a href="#" class="text-white">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
